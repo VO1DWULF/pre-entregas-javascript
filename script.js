@@ -26,26 +26,33 @@ do {
             switch (product) {
                 case 1:
                     total = total + 10
+                    console.log("Valor Neto $"+total+" USD")
                     break
                 case 2:
                     total = total + 14
+                    console.log("Valor Neto $"+total+" USD")
                     break
                 case 3:
                     total = total + 11
+                    console.log("Valor Neto $"+total+" USD")
                     break
                 case 4:
                     total = total + 18
+                    console.log("Valor Neto $"+total+" USD")
                     break
                 case 5:
                     total = total + 12
+                    console.log("Valor Neto $"+total+" USD")
                     break
                 case 6:
                     total = total + 15
+                    console.log("Valor Neto $"+total+" USD")
                     break
+                    
                 default:
                     alert("Artículo inexistente")
                     break
-            }console.log("Valor Neto $"+total+" USD")
+            }
             break
         case 2:
             alert("El total neto de su pedido es: $" + total + " USD")
@@ -53,6 +60,7 @@ do {
         case 3:
             const iva = ((total*0.2)+total)
             alert("El valor total de su pedido a pagar es: $"+ iva + " USD")
+            console.log("Valor Neto + IVA $"+iva+" USD")
             break
         case 4:
                 alert("Gracias por su compra!")
@@ -61,7 +69,7 @@ do {
             alert("Ingrese una categoría correcta")
             break
     }
-} 
+}
 while (menu !== 0 && menu !== 4)
 function menuReq(message) {
     return Number(prompt(message))
